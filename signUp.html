@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/all.css" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Login</title>
+    </head>
+    
+    <body>
+        <span class="d-none" id="username"></span>
+    
+        <div class="container my-5 text-center">
+            <div class="group m-auto w-75 p-5">
+                <h1>Smart Login System</h1>
+    
+                <div class="mb-3 ">
+                    <input type="text" class="form-control bg-transparent " id="signupName" placeholder="Enter your name">
+                    <p id="usernameAlert" class="d-none text-danger">include at least 3 letters starting with capital, second name is optional</p>
+                </div>
+
+                <div class="mb-3 ">
+                    <input type="email" class="form-control bg-transparent " id="signupEmail" placeholder="Enter your email">
+                    <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>   
+                </div>
+    
+                <div class="mb-3">
+                    <input type="password" class="form-control bg-transparent mb-3" id="signupPassword" placeholder="Enter your password">
+                    <p id="userPasswordAlert" class="d-none text-danger m-0">you must strenth your password, from 5 to 15 characters</p>   
+                </div>
+
+                <p id="exist"></p>
+
+                <p class="text-success d-none" id="confirmMsg">Success</p>
+                <p class="text-danger d-none mb-0" id="accountExistMsg">this account is exist ! Try another one.</p>
+                <p class="text-danger d-none mb-0" id="tryAgainMsg">signUp failed ! Try again</p>
+    
+                <button onclick=" signUp()" class="btn btn-outline-info w-50 my-3">Sign Up</button>
+                <p>You have an account?<a class='text-black' href='index.html' id="signin">Signin</a></p>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+        
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

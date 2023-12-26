@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Pacifico&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto&family=Source+Sans+3:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <span class="d-none" id="username"></span>
+    <div class="container my-5 text-center ">
+        <div class="group m-auto w-75 p-5">
+            <h1>Smart Login System</h1>
+
+            <input id="signinEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+            <input id="signinPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+            
+            <p class="text-danger d-none" id="fillMsg">fill the inputs first</p>
+            <p class="text-danger d-none" id="wrongMsg">your email or password is incorrect</p>
+
+            <button onclick="login()" class="btn btn-outline-info w-50 my-3" id="loginBtn">Login</button>
+            <p>Don’t have an account? <a class='text-black' href='signUp.html'>Sign Up</a></p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
